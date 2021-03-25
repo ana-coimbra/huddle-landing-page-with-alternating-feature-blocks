@@ -1,0 +1,46 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --palecyan: hsl(193, 100%, 96%);
+  --darkcyan: hsl(192, 100%, 9%);
+  --greyblue: hsl(208, 11%, 55%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ### Headings
+font-family: 'Poppins', sans-serif;
+- Family: [Poppins]
+- Weights: 600
+
+### Body, Call-to-actions
+
+font-family: 'Open Sans', sans-serif;
+- Family: [Open Sans]
+- Weights: 400, 700 */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.attribution {
+  color: black;
+  font-size: 11px;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: black;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: grey;
+}
