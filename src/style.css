@@ -228,11 +228,16 @@ h3 {
 
 @media only screen and (min-width: 1445px) {
   .top-section > *,
-  .middle-section,
   .bottom-section > * {
     margin-left: auto;
     margin-right: auto;
     width: 1280px;
+  }
+
+  .middle-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
   }
 }
 
