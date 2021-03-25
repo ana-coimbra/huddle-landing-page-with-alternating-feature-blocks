@@ -23,9 +23,90 @@ font-family: 'Open Sans', sans-serif;
 - Weights: 400, 700 */
 
 body {
+  color: var(--darkcyan);
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Top Section */
+
+.top-section {
+  background-color: var(--palecyan);
+  background-image: url("images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem;
+}
+
+/* Logo Section */
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-logo {
+  height: 30px;
+}
+
+.btn-try {
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 60px;
+}
+
+.btn-try:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.hero-heading {
+  margin-bottom: 3rem;
+  width: 90%;
+}
+
+.btn-get-started {
+  background-color: var(--pink);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-top: 2.5rem;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 65px;
+}
+
+.btn-get-started:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.mockups-illustration {
+  width: 650px;
 }
 
 /* Footer */
