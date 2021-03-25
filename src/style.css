@@ -159,8 +159,9 @@ h3 {
 .bottom-grid {
   display: grid;
   align-items: start;
+  justify-content: start;
   grid-template-columns: 400px 380px auto;
-  column-gap: 6.5rem;
+  grid-gap: 6.5rem;
 }
 
 /* Contacts */
@@ -192,7 +193,7 @@ h3 {
   text-align: center;
   vertical-align: middle;
   width: 34px;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .social-icons i:hover {
@@ -201,7 +202,7 @@ h3 {
   cursor: pointer;
 }
 
-/* Copy Rights */
+/* Copy Rights & Footer */
 
 .copy-rights-footer {
   font-size: 11px;
@@ -231,5 +232,123 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 1280px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Top Section */
+  .top-section {
+    background-image: url("images/bg-hero-mobile.svg");
+    padding: 1.5rem;
+  }
+
+  .top-logo {
+    height: 15px;
+  }
+
+  .btn-try {
+    font-size: 12px;
+    padding: 8px 25px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column;
+    padding: 0 1.8rem;
+  }
+
+  .hero-heading {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .btn-get-started {
+    margin-top: 2rem;
+    font-size: 12px;
+    padding: 12px 50px;
+  }
+
+  .mockups-illustration {
+    width: 300px;
+  }
+
+  /* Middle Section */
+  .middle-section {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .box {
+    flex-direction: column;
+
+    gap: 2.5rem;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .box-1 .info,
+  .box-3 .info {
+    order: 2;
+  }
+
+  .info h3 {
+    font-size: 20px;
+  }
+
+  .info p {
+    width: 245px;
+  }
+
+  .illustrations img {
+    width: 200px;
+  }
+
+  /* Build Your Community Section */
+  .box-community {
+    padding: 2rem 1.5rem;
+    top: 4rem;
+    width: 320px;
+  }
+
+  .box-community h2 {
+    font-size: 16px;
+  }
+
+  /* Bottom Section */
+  .bottom-section {
+    font-size: 14px;
+    padding: 8rem 1.5rem 2.5rem;
+  }
+
+  .bottom-logo img {
+    margin-bottom: 1.5rem;
+    width: 140px;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3.5rem;
+  }
+
+  /* Pages */
+  .pages {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+
+  /* Social Icons */
+  .social-icons {
+    justify-self: center;
+  }
+
+  /* Copy Rights & Footer */
+
+  .copy-rights-footer {
+    text-align: center;
+    margin-top: 2rem;
   }
 }
